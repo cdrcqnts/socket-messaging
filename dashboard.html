@@ -22,7 +22,7 @@
 
 <script>
     $(function () {
-        var socket = io();
+        var socket = io("/");
         $('.btn-message').click(function (e) {
             e.preventDefault(); // prevents page reloading
             socket.emit('message', $(this).html());
